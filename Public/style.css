@@ -1,0 +1,99 @@
+body {
+    box-sizing: border-box;
+
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    border: solid;
+    border-color: blue;
+    border-width: 10px;
+    border-radius: 30px;
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40%;
+
+}
+
+.answerBox {
+    min-height: 30%;
+    min-width: 90%;
+    display: flex;
+}
+
+.answer {
+
+}
+
+.btnContainer {
+margin-top: 100px;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    border: solid;
+    background-color: ghostwhite;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+
+#Header {
+    position: fixed;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    left: 0;
+    right: 0;
+    top: 0;
+    flex-direction: row;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    z-index: 1;
+}
+
+#TitleHeader {
+    font-size: 55px;;
+    align-items: center;
+    margin: 0px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    margin-left: 20px;
+    flex-grow: 1;
+    text-decoration: none;
+    color: white;
+}
+
+#TitleHeader:hover {
+    color: rgb(151, 151, 151); 
+}
+
+#HeaderText {
+    align-items: center;
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.headerTitleH1 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
