@@ -1,15 +1,18 @@
 body {
     box-sizing: border-box;
+    margin: 0;
 
 }
 
 main {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: url(./assets/grunge-bricks-cracked-concrete-wall-textured-background_53876-101354.jpg);
+    background-size: 100vw 100vh;
 }
 
 .container {
@@ -17,36 +20,208 @@ main {
     border-color: blue;
     border-width: 10px;
     border-radius: 30px;
-    width: 50%;
+    width: 70%;
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 40%;
-
+    min-height: 300px;
+    min-width: 300px;
+    margin-top: 50px;
 }
 
-.answerBox {
-    min-height: 30%;
-    min-width: 90%;
+.containerHeaders {
+    margin-top: 100px;
+    background-color: antiquewhite;
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pic {
+    height: 200px;
+    width: 200px;
+}
+
+.picHidden {
+    visibility: hidden;
+}
+
+.bigBox {
+    width: 80%;
+    gap: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.containerHeader {
+    margin: 10px;
+    font-size: 30px;
+}
+
+.answerBoxA {
+    height: 30%;
+    width: 90%;
+    display: flex;
+    background-color: lightgrey;
+    border-radius: 25px;
+    justify-content: center;
+    font-size: 18px;
+    align-items: center;
+    opacity: 0.75;
+    background-size: 100%;
+    min-height: 50px;
 }
 
 .answer {
-
+    font-size: 18px;
 }
 
-.btnContainer {
-margin-top: 100px;
+.answerImg {
+    height: 150px;
+    width: 150px;
 }
 
-.btn {
+.emptyBox {
     width: 100px;
     height: 40px;
     border: solid;
     background-color: ghostwhite;
     border-radius: 10px;
     margin-top: 30px;
+}
+
+#bigBoxBtn {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.btnContainer {
+width: 33%;
+display: flex;
+gap: 22px;
+justify-content: flex-start;
+flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+/* #btn1, #btn2, #btn3, #btn4, .saveBtn, .favoritesBtn {
+    width: 150px;
+    height: 40px;
+    border: solid;
+    background-color: ghostwhite;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 2px 2px 0 black,
+            -2px -2px 0 black,
+            -2px 2px 0 black,
+            2px -2px 0 black;
+    transition: 500ms ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 20px 5px 0 black, -20px -5px 0 black;
+}
+
+button:focus {
+    outline: none;
+} */
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+          -webkit-tap-highlight-color: transparent;
+  }
+  
+  button {
+    font-size: medium;
+      width: 150px;
+      height: 50px;
+      cursor: pointer;
+      color: black;
+      background: ghostwhite;
+      opacity: 0.7;
+      border: 2px solid black;
+      border-radius: 15px;
+      box-shadow: 2px 2px 0 black,
+      -2px -2px 0 black,
+      -2px 2px 0 black,
+      2px -2px 0 black;
+      transition: 500ms ease-in-out;
+    }
+    
+    button:hover {
+        box-shadow: 40px 5px 0 blue, -20px -5px 0 palevioletred;
+        background: ghostwhite !important;
+        color: black;
+        opacity: 1;
+    }
+    
+    button:focus {
+      outline: none;
+  }
+
+.favoriteBtnContainer {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    gap: 10px;
+    align-items: end;
+}
+
+.empty {
+    width: 33%;
+    justify-content: center;
+    display: flex;
+}
+
+.personText {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    background: ghostwhite;
+    opacity: 0.75;
+    background-size: 100%;
+    border-radius: 15px;
+}
+
+.imgHidden {
+    visibility: hidden !important;
+}
+
+.personInfoBox {
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.answerBoxB {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    align-items: center;
+    gap: 30%;
+    width: 55%;
+    
 }
 
 
@@ -96,4 +271,22 @@ margin-top: 100px;
     margin: 0;
     display: flex;
     align-items: center;
+}
+
+#favorites {
+    background: ghostwhite;
+    border: solid;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+#boxFavorites {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }

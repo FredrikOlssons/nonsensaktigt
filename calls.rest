@@ -3,3 +3,29 @@ GET http://localhost:3001/api/name
 ###
 
 GET http://localhost:3001/api/jokes
+
+###
+
+GET http://localhost:3001/me/api/
+
+###
+
+GET https://localhost:3001/universities/api/
+
+###
+
+POST http://localhost:3001/api
+Content-Type: application/json
+
+{
+    "name": "Fredrik"
+}
+
+###
+
+GET http://localhost:3001/api/
+
+
+###
+
+GET http://localhost:3001/api/:id
